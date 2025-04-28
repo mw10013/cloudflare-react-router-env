@@ -38,10 +38,10 @@
     "build": "react-router build",
     "cf-typegen": "wrangler types && react-router typegen",
     "check": "tsc && react-router build && wrangler deploy --dry-run",
-    "deploy": "npm run build && wrangler deploy",
+    "deploy": "pnpm run build && wrangler deploy",
     "dev": "react-router dev",
-    "preview": "npm run build && vite preview",
-    "typecheck": "npm run typegen && tsc -b"
+    "preview": "pnpm run build && vite preview",
+    "typecheck": "pnpm run typegen && tsc -b"
   },
   "type": "module"
 }
